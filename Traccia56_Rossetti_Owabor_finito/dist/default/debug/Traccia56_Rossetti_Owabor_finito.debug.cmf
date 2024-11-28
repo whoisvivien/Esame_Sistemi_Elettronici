@@ -1,0 +1,310 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/debug/main.o
+resetVec CODE 0 0 0 3 2 1
+MainCode CODE 0 749 749 B7 2 1
+udata_shr COMMON 1 70 70 1 1 1
+config CONFIG 4 2007 2007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 20-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 20-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-748 2
+CONST 800-1FFF 2
+ENTRY 3-748 2
+ENTRY 800-1FFF 2
+IDLOC 2000-2003 2
+CODE 3-748 2
+CODE 800-1FFF 2
+SFR0 6-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 71-7F 1
+EEDATA 2100-21FF 2
+STRCODE 3-748 2
+STRCODE 800-1FFF 2
+STRING 3-748 2
+STRING 800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/debug/main.o
+749 MainCode CODE >63:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+74B MainCode CODE >64:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+74C MainCode CODE >65:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+74E MainCode CODE >66:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+74F MainCode CODE >67:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+750 MainCode CODE >70:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+752 MainCode CODE >71:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+753 MainCode CODE >74:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+755 MainCode CODE >75:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+756 MainCode CODE >79:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+758 MainCode CODE >80:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+759 MainCode CODE >81:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+75A MainCode CODE >85:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+75C MainCode CODE >86:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+75D MainCode CODE >87:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+75E MainCode CODE >90:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+75F MainCode CODE >91:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+760 MainCode CODE >94:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+762 MainCode CODE >95:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+763 MainCode CODE >96:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+764 MainCode CODE >100:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+765 MainCode CODE >101:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+766 MainCode CODE >102:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+767 MainCode CODE >103:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+768 MainCode CODE >105:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+769 MainCode CODE >107:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+76A MainCode CODE >109:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+76B MainCode CODE >110:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+76C MainCode CODE >111:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+76D MainCode CODE >112:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+76E MainCode CODE >116:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+76F MainCode CODE >120:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+770 MainCode CODE >121:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+771 MainCode CODE >122:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+772 MainCode CODE >123:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+773 MainCode CODE >125:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+774 MainCode CODE >126:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+775 MainCode CODE >127:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+776 MainCode CODE >130:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+778 MainCode CODE >131:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+779 MainCode CODE >136:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+77A MainCode CODE >137:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+77B MainCode CODE >138:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+77C MainCode CODE >139:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+77D MainCode CODE >141:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+77E MainCode CODE >143:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+77F MainCode CODE >146:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+780 MainCode CODE >147:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+781 MainCode CODE >148:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+782 MainCode CODE >149:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+783 MainCode CODE >150:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+784 MainCode CODE >152:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+785 MainCode CODE >153:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+786 MainCode CODE >156:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+787 MainCode CODE >157:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+788 MainCode CODE >158:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+789 MainCode CODE >159:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+78A MainCode CODE >163:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+78B MainCode CODE >164:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+78C MainCode CODE >165:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+78D MainCode CODE >170:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+78F MainCode CODE >171:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+790 MainCode CODE >172:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+792 MainCode CODE >173:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+793 MainCode CODE >174:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+795 MainCode CODE >175:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+796 MainCode CODE >178:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+798 MainCode CODE >179:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+799 MainCode CODE >180:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+79A MainCode CODE >182:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+79C MainCode CODE >183:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+79D MainCode CODE >184:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+79E MainCode CODE >188:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+79F MainCode CODE >189:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7A0 MainCode CODE >190:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7A1 MainCode CODE >191:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7A2 MainCode CODE >193:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7A3 MainCode CODE >195:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7A4 MainCode CODE >197:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7A5 MainCode CODE >198:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7A6 MainCode CODE >199:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7A7 MainCode CODE >200:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7A8 MainCode CODE >208:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7A9 MainCode CODE >211:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7AB MainCode CODE >212:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7AC MainCode CODE >213:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7AE MainCode CODE >214:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7AF MainCode CODE >218:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7B1 MainCode CODE >219:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7B2 MainCode CODE >220:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7B3 MainCode CODE >222:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7B5 MainCode CODE >223:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7B6 MainCode CODE >224:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7B7 MainCode CODE >226:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7B9 MainCode CODE >227:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7BA MainCode CODE >228:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7BB MainCode CODE >230:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7BD MainCode CODE >231:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7BE MainCode CODE >233:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7C0 MainCode CODE >234:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7C1 MainCode CODE >235:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7C2 MainCode CODE >237:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7C3 MainCode CODE >241:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7C4 MainCode CODE >242:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7C5 MainCode CODE >243:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7C6 MainCode CODE >244:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7C7 MainCode CODE >245:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7C8 MainCode CODE >246:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7C9 MainCode CODE >250:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7CA MainCode CODE >251:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7CB MainCode CODE >252:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7CC MainCode CODE >255:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7CD MainCode CODE >256:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7CE MainCode CODE >257:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7CF MainCode CODE >258:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7D0 MainCode CODE >259:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7D1 MainCode CODE >260:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7D2 MainCode CODE >261:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7D3 MainCode CODE >262:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7D4 MainCode CODE >263:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7D5 MainCode CODE >264:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7D6 MainCode CODE >265:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7D7 MainCode CODE >266:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7D8 MainCode CODE >267:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7D9 MainCode CODE >268:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7DA MainCode CODE >269:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7DB MainCode CODE >270:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7DC MainCode CODE >271:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7DD MainCode CODE >274:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7DE MainCode CODE >275:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7DF MainCode CODE >276:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7E0 MainCode CODE >277:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7E1 MainCode CODE >278:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7E2 MainCode CODE >279:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7E3 MainCode CODE >280:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7E4 MainCode CODE >281:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7E5 MainCode CODE >282:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7E6 MainCode CODE >283:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7E7 MainCode CODE >284:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7E8 MainCode CODE >285:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7E9 MainCode CODE >286:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7EA MainCode CODE >287:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7EB MainCode CODE >288:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7EC MainCode CODE >289:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7ED MainCode CODE >290:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7EE MainCode CODE >291:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7EF MainCode CODE >292:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7F0 MainCode CODE >293:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7F1 MainCode CODE >294:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7F2 MainCode CODE >295:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7F3 MainCode CODE >296:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7F4 MainCode CODE >297:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7F5 MainCode CODE >298:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7F6 MainCode CODE >299:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7F7 MainCode CODE >300:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7F8 MainCode CODE >303:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7FA MainCode CODE >304:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7FB MainCode CODE >305:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7FC MainCode CODE >307:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7FE MainCode CODE >308:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+7FF MainCode CODE >309:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+0 resetVec CODE >56:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+2 resetVec CODE >57:C:\Users\vivie\OneDrive - Università Politecnica delle Marche\Desktop\Traccia56_Rossetti_Owabor_finito\Traccia56_Rossetti_Owabor_finito\main.asm
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 800 0 ABS 0 - -
+__Hspace_1 71 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 6 0 ABS 0 udata_bank0 -
+__Hudata_bank1 6 0 ABS 0 udata_bank1 -
+__Hudata_bank2 6 0 ABS 0 udata_bank2 -
+__Hudata_bank3 6 0 ABS 0 udata_bank3 -
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+__LresetVec 0 0 CODE 0 resetVec -
+__HresetVec 6 0 CODE 0 resetVec -
+__Hedata 6 0 ABS 0 edata -
+__Hudata 6 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 6 0 ABS 0 edata -
+__Ludata 6 0 ABS 0 udata -
+__Hcode 6 0 ABS 0 code -
+__Hdata 6 0 ABS 0 data -
+__Lcode 6 0 ABS 0 code -
+__Ldata 6 0 ABS 0 data -
+__S0 800 0 ABS 0 - -
+__S1 71 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Lconfig 0 0 CONFIG 4 config -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__LMainCode 6 0 ABS 0 MainCode -
+__Ludata_bank0 6 0 ABS 0 udata_bank0 -
+__Ludata_bank1 6 0 ABS 0 udata_bank1 -
+__Ludata_bank2 6 0 ABS 0 udata_bank2 -
+__Ludata_bank3 6 0 ABS 0 udata_bank3 -
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+__HMainCode 6 0 ABS 0 MainCode -
+__Hudata_shr 6 0 ABS 0 udata_shr -
+__Ludata_shr 6 0 ABS 0 udata_shr -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+resetVec 0 0 0 3 2
+MainCode 0 749 E92 B7 2
+udata_shr 1 70 70 1 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
